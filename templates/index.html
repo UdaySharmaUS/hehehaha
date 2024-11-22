@@ -1,0 +1,27 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word to PDF Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word to PDF Converter</h1>
+        <!-- Updated Form -->
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Upload Word File:</label>
+            <input type="file" id="file" name="file" accept=".doc, .docx" required>
+            <button type="submit">Convert to PDF</button>
+        </form>
+        <div id="metadata" class="metadata"></div>
+        <a id="downloadLink" href="#" style="display: none;">Download PDF</a>
+        <button id="deleteButton" style="display: none;">Delete File</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
